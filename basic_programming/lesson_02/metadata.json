@@ -1,0 +1,11 @@
+{
+  "topic": "input, output. Scanner and Random",
+  "date": "2023-11-08",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/HelloWorld.java"
+  ],
+  "video": ""
+}
