@@ -1,0 +1,13 @@
+{
+  "topic": "Primitive variables. input, output. Scanner and Random",
+  "date": "2023-11-10",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/ClassworkInt.java",
+    "src/ClassworkScanner.java",
+    "src/ClassworkScannerExample.java"
+  ],
+  "video": ""
+}
