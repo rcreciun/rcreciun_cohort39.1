@@ -10,10 +10,10 @@ public class ClassworkScanner {
         // Пример 1: Спрашиваем имя пользователя
         System.out.print("Привет! Как тебя зовут? ");
         // создайте переменную name нужного формата и считайте значение из консоли при помощи соответствующего метода:
-        // String name = scanner.nextLine();
+        String name = scanner.nextLine();
         // int name = scanner.nextInt();
         // boolean name = scanner.nextBoolean();
-        // System.out.println("Рад познакомиться, " + name + "!");
+        System.out.println("Рад познакомиться, " + name + "!");
 
         // Пример 2: Спрашиваем год рождения пользователя
         System.out.print("В каком году ты родился? ");
@@ -22,7 +22,7 @@ public class ClassworkScanner {
         System.out.println("О, тебе уже " + age + " лет!");
 
         // Пример 3: Спрашиваем любимый цвет пользователя
-        scanner.nextLine(); // очистка буфера сканера
+        //scanner.nextLine(); // очистка буфера сканера
         System.out.print("Какой твой любимый цвет? ");
         String favoriteColor = scanner.nextLine();
         System.out.println(favoriteColor + " - отличный выбор!");
