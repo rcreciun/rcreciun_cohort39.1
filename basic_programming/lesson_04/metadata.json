@@ -1,0 +1,12 @@
+{
+  "topic": "Casting of data types",
+  "date": "2023-11-13",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/CastingExample.java",
+    "src/NumberSystemsOperations.java"
+  ],
+  "video": ""
+}
