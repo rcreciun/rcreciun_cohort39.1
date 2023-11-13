@@ -6,7 +6,8 @@
   "homework": "homework.md",
   "code": [
     "src/CastingExample.java",
-    "src/NumberSystemsOperations.java"
+    "src/NumberSystemsOperations.java",
+    "src/CharExample.java"
   ],
   "video": ""
 }
