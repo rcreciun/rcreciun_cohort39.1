@@ -28,29 +28,9 @@ public class StringHomework {
         System.out.println("Введите дату в формате гггг-мм-дд:");
         String date = ...;
         formatDate(date);
-        
+
     }
 
-    // Метод для анализа текста
-    public static void analyzeText(String text) {
-        int charCount = text.length();
-        int letterCount = text.replaceAll("[^\\p{L}]", "").length();
-        int spaceCount = text.length() - text.replace(" ", "").length();
-
-        String reversedText = new StringBuilder(text).reverse().toString();
-
-        System.out.println("Количество символов: " + charCount);
-        System.out.println("Количество букв: " + letterCount);
-        System.out.println("Количество пробелов: " + spaceCount);
-        System.out.println("Текст в обратном порядке: " + reversedText);
-    }
-
-    // Метод для форматирования даты
-    public static void formatDate(String date) {
-        String formattedDate = date;
-        //... 
-        System.out.println("Отформатированная дата: " + formattedDate);
-        
     }
 }
 
