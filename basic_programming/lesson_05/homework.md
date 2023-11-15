@@ -28,10 +28,20 @@ public class StringHomework {
         System.out.println("Введите дату в формате гггг-мм-дд:");
         String date = ...;
         formatDate(date);
-
+        
     }
 
+    // Метод для анализа текста
+    public static void analyzeText(String text) {
+        // ваш код ниже:
+    }
+
+    // Метод для форматирования даты
+    public static void formatDate(String date) {
+        String formattedDate = date;
+        //... 
+        System.out.println("Отформатированная дата: " + formattedDate);
+        
     }
 }
-
 ```
