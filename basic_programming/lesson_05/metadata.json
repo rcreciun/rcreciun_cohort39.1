@@ -1,0 +1,14 @@
+{
+  "topic": "String",
+  "date": "2023-11-15",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/StringExamples.java",
+    "src/StringComparisonExamples.java",
+    "src/FormatExamples.java",
+    "src/StringPractice.java"
+  ],
+  "video": ""
+}

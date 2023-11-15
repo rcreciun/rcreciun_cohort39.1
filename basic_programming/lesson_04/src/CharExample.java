@@ -11,6 +11,7 @@ public class CharExample {
 
         // Создание char с использованием разных кодировок
         char chUtf16 = '\u0041'; // UTF-16 код для 'A'
+
         char chAscii = 65;       // ASCII код для 'A'
 
         System.out.println("Char from UTF-16: " + chUtf16);
@@ -31,5 +32,13 @@ public class CharExample {
 
         System.out.println("Is letter: " + isLetter);
         System.out.println("Upper case: " + upperCaseCh);
+
+        // это работает только для алфавитных буквенных символов, но не для чисел и спец символов
+        upperCaseCh = Character.toUpperCase('b');
+        System.out.println("Upper case: " + upperCaseCh);
+
+        // 72   69   76   76   79
+        //'H'   'E'  'L'  'L'  'O'
+
     }
 }

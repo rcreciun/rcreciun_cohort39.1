@@ -11,7 +11,7 @@ public class CastingExample {
 
         // Явное приведение типов (Explicit Casting)
         // Пример: преобразование от большего к меньшему типу данных
-        double doubleVal = 9.99;
+        double doubleVal = 9.99999;
         int intValFromDouble = (int) doubleVal; // явное приведение из double в int
         short shortValFromInt = (short) intValFromDouble; // явное приведение из int в short
         System.out.println("Явное приведение (double -> int): " + intValFromDouble);
