@@ -24,3 +24,10 @@
 [пользователь вводит true или false]
 Можно ли провести спортивное мероприятие? [да/нет]
 ```
+
+### Тест по теме `String` [ссылка](https://docs.google.com/forms/d/e/1FAIpQLScS1CiRwejnOSjF8EI9fvqpbwLPJVmSvyqqjE_KuPWzXxOOtQ/viewform?usp=sf_link)
+### Тест по теме `Boolean` [ссылка](https://docs.google.com/forms/d/e/1FAIpQLSd5HYhX8seufaHw-QHY43qkocu64nJ25u-Ia9gv1in_eVv6jA/viewform?usp=sf_link)
+
+
+
+
