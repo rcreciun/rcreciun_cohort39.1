@@ -1,0 +1,14 @@
+{
+  "topic": "Ищщдуфт",
+  "date": "2023-11-17",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/BooleanExamples.java",
+    "src/LogicalOperationsPractice.java",
+    "src/HikingDecision.java",
+    "src/MovieNightDecision.java"
+  ],
+  "video": ""
+}
