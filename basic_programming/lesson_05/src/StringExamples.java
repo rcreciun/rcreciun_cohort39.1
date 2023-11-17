@@ -70,5 +70,10 @@ public class StringExamples {
         // не допустимо, тк сначала получим длину строки (int) и только потом попытаемся взаимодействовать с числом,
         // как со строкой
         // lengthWithoutSpaces = s5.length().trim();
+
+        // Использование метода replace()
+        String s5a = "Hello friends";
+        String s5b = s5a.replace("friends", "World"); // "Hello World"
+        System.out.println("Замена символов с помощью replace(): " + s5b);
     }
 }

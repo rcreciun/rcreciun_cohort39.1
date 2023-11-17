@@ -259,6 +259,11 @@ public class StringExamples {
         // Использование метода concat()
         String s4 = s1.concat(" ").concat(s2); // "Hello World"
         System.out.println("Объединение строк с помощью concat(): " + s4);
+
+      // Использование метода replace()
+      String s5a = "Hello friends";
+      String s5b = s5a.replace("friends", "World"); // "Hello World"
+      System.out.println("Замена символов с помощью replace(): " + s5b);
     }
 }
 
