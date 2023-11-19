@@ -1,0 +1,13 @@
+{
+  "topic": "if-else",
+  "date": "2023-11-20",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/ClassworkMain.java",
+    "src/IfElseExamples.java",
+    "src/ClassworkHealthChecker.java"
+  ],
+  "video": ""
+}

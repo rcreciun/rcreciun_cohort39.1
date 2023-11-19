@@ -19,9 +19,11 @@ public class HikingDecision {
         System.out.println("Введите температуру в градусах:");
         int temperature = scanner.nextInt();
 
+        scanner.nextLine();
         // Спросить о возможности осадков
-        System.out.println("Ожидаются ли осадки? (true/false):");
-        boolean isRaining = scanner.nextBoolean();
+        System.out.println("Ожидаются ли осадки? (yes/no):");
+        String weather = scanner.nextLine();
+        boolean isRaining = weather.equalsIgnoreCase("yes");
 
         // Логическое условие для похода
         boolean canGoHiking = (groupSize > 3 && groupSize < 10) && (temperature > 18 && temperature < 25) && !isRaining;

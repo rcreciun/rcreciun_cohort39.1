@@ -29,7 +29,6 @@ public class BooleanExamples {
          *
          *  && - логическое "и"  - возвращает true, если ОБА оператора равны true
          *  || - логическое или - возвращает true, если хотя бы один из операторов равен true
-         *
          *  ^ - XOR - возвращает true, если логические операторы имеют разное значение
          *
          */
@@ -125,8 +124,6 @@ public class BooleanExamples {
         // true && false ^ true
         // false && true
         // true
-
-
     }
 
     static boolean isSomething(boolean b1, boolean b2) {
