@@ -1,0 +1,12 @@
+{
+  "topic": "switch",
+  "date": "2023-11-22",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/ClassworkSwitchExample.java",
+    "src/PracticeSimpleCalculator.java"
+  ],
+  "video": ""
+}

@@ -5,7 +5,7 @@ public class ClassworkMain {
 //        tryIfElseStatement();
 //        ifElseWithString();
 //        ternaryOperatorExamples();
-//        shopping();
+        shopping();
     }
 
     private static void tryIfElseStatement() {
@@ -49,6 +49,7 @@ public class ClassworkMain {
         String category = (age < 12) ? "Ребенок" :
                 (age < 18) ? "Подросток" :
                         (age < 70) ? "Взрослый" : "Пенсионер";
+
         System.out.println("Ваша категория: " + category);
 
         scanner.close();
@@ -85,17 +86,22 @@ public class ClassworkMain {
                 "Введите пожалуйста ответ true/false:");
         boolean haveCookie = scanner.nextBoolean();
 
+
+
         if (haveCandy) {
-            System.out.println("мне на всю сдачу!");
+            System.out.println("мне на всю сдачу конфет!");
         } else if (haveCake) {
             System.out.println("Есть ли у вас пироженное \"картошка\"? " +
                     "Введите пожалуйста ответ true/false:");
+
             boolean havePotatoCake = scanner.nextBoolean();
+
             if (havePotatoCake) {
                 System.out.println("дайте три штуки");
             } else {
                 System.out.println("дайте тогда заварную трубочку");
             }
+
         } else if (haveCookie) {
             System.out.println("тогда мне печенье к чаю");
         } else {
