@@ -1,0 +1,12 @@
+{
+  "topic": "while",
+  "date": "2023-11-24",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/PracticeWhile.java",
+    "src/ClassworkWhileLoop.java"
+  ],
+  "video": ""
+}

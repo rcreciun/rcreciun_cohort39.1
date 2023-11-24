@@ -96,13 +96,15 @@ public class ClassworkSwitchExample {
     }
 
     public static void switchWithEnum(DayOfWeek day) {
+        String str = "hello";
+
         switch (day) {
             case MONDAY:
             case WEDNESDAY:
+            case FRIDAY:
                 System.out.println("don't forget about Java basic course!");
             case THURSDAY:
             case TUESDAY:
-            case FRIDAY:
                 System.out.println("today is working day");
                 break;
             case SATURDAY:
