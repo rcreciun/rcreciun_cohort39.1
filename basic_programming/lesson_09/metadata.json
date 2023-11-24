@@ -6,7 +6,8 @@
   "homework": "homework.md",
   "code": [
     "src/PracticeWhile.java",
-    "src/ClassworkWhileLoop.java"
+    "src/ClassworkWhileLoop.java",
+    "src/IncrementDecrementDemo.java"
   ],
   "video": ""
 }
