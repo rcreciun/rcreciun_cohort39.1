@@ -87,7 +87,6 @@ public class ClassworkWhileLoop {
             System.out.println("i print it from do-while loop. x = " + x);
             x++; // x = 10
 
-
         } while (x < 10);  // true or false
     }
 

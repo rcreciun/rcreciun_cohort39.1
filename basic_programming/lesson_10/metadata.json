@@ -1,0 +1,12 @@
+{
+  "topic": "for loop",
+  "date": "2023-11-27",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/ClassworkForLoop.java",
+    "src/PracticeForLoop.java"
+  ],
+  "video": ""
+}
