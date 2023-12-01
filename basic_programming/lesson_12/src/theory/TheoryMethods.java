@@ -1,6 +1,5 @@
-package basic;
-
-public class LessonFourMethods {
+package theory;
+public class TheoryMethods {
     /**
      * Метод в Java – это комплекс выражений, совокупность которых позволяет выполнить определенную операцию. Так,
      * например, при вызове метода System.out.println(), система выполняет ряд команд для выведения сообщения в
