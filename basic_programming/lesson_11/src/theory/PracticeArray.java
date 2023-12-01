@@ -38,7 +38,7 @@ public class PracticeArray {
         System.out.println("Введите ваше число");
         String input = scanner.nextLine();
 
-        while (input.matches("\\d+")) {
+        while (!input.matches("\\d+")) {
             System.out.println("Ваша строка содержит символы помимо чисел, попробуйте еще раз");
             input = scanner.nextLine();
         }
