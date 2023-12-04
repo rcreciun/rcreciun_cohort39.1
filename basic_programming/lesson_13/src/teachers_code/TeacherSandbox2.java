@@ -1,8 +1,6 @@
 package teachers_code;
 
-import java.util.Scanner;
-
-public class TeacherSandbox {
+public class TeacherSandbox2 {
     public static void main(String[] args) {
         String[] pizzaMargarita = {"стандартное тесто", "без мяса", "томатный", "моцарелла"};
         String[] hunterPizza = {"стандартное тесто", "охотничьи колбаски", "грибной соус", "пармезан"};
