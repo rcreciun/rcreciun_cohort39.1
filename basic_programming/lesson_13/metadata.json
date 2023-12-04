@@ -1,0 +1,14 @@
+{
+  "topic": "methods",
+  "date": "2023-12-04",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/theory/TheoryMethods.java",
+    "src/theory/TemperatureConverter.java",
+    "src/theory/DistanceCalculator.java",
+    "src/theory/Practice.java"
+  ],
+  "video": ""
+}

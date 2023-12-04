@@ -1,4 +1,7 @@
 package theory;
+
+import java.util.Random;
+
 public class TheoryMethods {
     /**
      * Метод в Java – это комплекс выражений, совокупность которых позволяет выполнить определенную операцию. Так,
@@ -6,8 +9,10 @@ public class TheoryMethods {
      * консоль.
      * <p>
      * Синтаксис:
-     * <p> modifier returnType nameOfMethod (Parameter List) { // тело метода }
-     * <p> Приведенный выше синтаксис включает:
+     * <p>
+     *     modifier returnType nameOfMethod (Parameter List) { // тело метода }
+     *     <p>
+     * Приведенный выше синтаксис включает:
      * <p> modifier – определяет тип доступа для метода и возможность его использования.
      * <p> returnType – метод может возвратить значение.
      * <p> nameOfMethod – указывает имя метода. Сигнатура метода включает имя метода и перечень параметров.
@@ -39,6 +44,13 @@ public class TheoryMethods {
         // сложная логика подсчетов
 
         double result = x - y;
+
+        int[] nums = new int[1000];
+        Random random = new Random();
+
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = random.nextInt();
+        }
 
         return result;
     }
