@@ -44,9 +44,14 @@ public class Practice {
         // такая конструкция называется "анонимный массив", то есть массив,
         // который не сохранен в переменную и существует исключительно в виде значения.
         // пример анонимного массива целых чисел:
-        printArray(new int[]{45, -2, -4354, 0, 5});
+        printArray(new int[] {45, -2, -4354, 0, 5});
+        printArray(new int[] {});
+        printArray(new int[] {1});
+        printArray(new int[] {1, 1, 1});
     }
 
+
+    // метод нужен лишь для демонстрации работы с анонимными массивами, не относится к какому-либо из заданий
     public static void printArray(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
             System.out.print(nums[i] + " ");
