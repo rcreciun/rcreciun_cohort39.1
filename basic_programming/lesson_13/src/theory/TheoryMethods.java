@@ -27,7 +27,7 @@ public class TheoryMethods {
      * различными параметрами. Данный процесс отличен от переопределения методов. При переопределении методов, метод
      * характеризуется аналогичным именем, типом, числом параметров и т.д.
      */
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int x = methodThree();
         int a = methodThree();
         int b = methodThree();
