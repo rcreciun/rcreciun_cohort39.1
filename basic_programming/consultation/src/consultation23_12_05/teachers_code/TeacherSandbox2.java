@@ -30,5 +30,6 @@ public class TeacherSandbox2 {
     // попробуйте решить задачу перегрузив методы
     public static void calculateCircleArea(){
         //...
+        // печатает результат
     }
 }
