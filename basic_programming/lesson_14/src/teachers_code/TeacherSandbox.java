@@ -4,8 +4,30 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class TeacherSandbox {
-    // задача: создать массив, считав значения из консоли, при этом не зная исходны размер
+
     public static void main(String[] args) {
+        int x = 5;
+        // fillIntArray(x);
+        int[] myArray = {1, 2, 3};
+
+        System.out.println("Arrays.toString(myArray) = " + Arrays.toString(myArray));
+
+        changeArray(myArray);
+        System.out.println("Arrays.toString(myArray) = " + Arrays.toString(myArray));
+    }
+
+    // если в метод в качестве аргумента передать ссылочны тип данных, то изменяя эту переменную (аргумент метода)
+    // внутри метода мы увидим изменения и в том месте откуда метод вызван (в нашем случае - метод main)
+    public static void changeArray(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = nums[i] * 2;
+        }
+    }
+
+    // задача: создать массив, считав значения из консоли, при этом не зная исходны размер
+    public static void fillIntArray(int num) {
+        num = 10;
+
         Scanner scanner  = new Scanner(System.in);
         int[] nums = new int[0];
 
@@ -58,6 +80,6 @@ public class TeacherSandbox {
             }
         }
 
-        System.out.println("Arrays.toString(nums) = " + Arrays.toString(nums));
+        // System.out.println("Arrays.toString(nums) = " + Arrays.toString(nums));
     }
 }
