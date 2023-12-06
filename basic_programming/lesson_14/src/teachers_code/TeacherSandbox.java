@@ -10,10 +10,13 @@ public class TeacherSandbox {
         // fillIntArray(x);
         int[] myArray = {1, 2, 3};
 
-        System.out.println("Arrays.toString(myArray) = " + Arrays.toString(myArray));
+        //fillIntArray(myArray);
 
+        System.out.println("Arrays.toString(myArray) = " + Arrays.toString(myArray) + " link: " + myArray);
         changeArray(myArray);
-        System.out.println("Arrays.toString(myArray) = " + Arrays.toString(myArray));
+        System.out.println("Arrays.toString(myArray) = " + Arrays.toString(myArray) + " link: " + myArray);
+        changeArray(myArray);
+        System.out.println("Arrays.toString(myArray) = " + Arrays.toString(myArray) + " link: " + myArray);
     }
 
     // если в метод в качестве аргумента передать ссылочны тип данных, то изменяя эту переменную (аргумент метода)
@@ -25,11 +28,11 @@ public class TeacherSandbox {
     }
 
     // задача: создать массив, считав значения из консоли, при этом не зная исходны размер
-    public static void fillIntArray(int num) {
-        num = 10;
+    public static void fillIntArray(int[] nums) {
+
 
         Scanner scanner  = new Scanner(System.in);
-        int[] nums = new int[0];
+        nums = new int[0];
 
         System.out.println("Вы хотите ввести все элементы в массив за раз через пробел или вводить элементы по одному?\n" +
                 "1 - все за раз\n" +
