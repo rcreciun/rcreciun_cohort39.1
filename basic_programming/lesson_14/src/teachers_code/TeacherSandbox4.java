@@ -3,36 +3,30 @@ package teachers_code;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class TeacherSandbox {
+public class TeacherSandbox4 {
 
     public static void main(String[] args) {
-        int x = 5;
-        // fillIntArray(x);
-        int[] myArray = {1, 2, 3};
+        int x = getMax(170, 50);
 
-        //fillIntArray(myArray);
-
-        System.out.println("Arrays.toString(myArray) = " + Arrays.toString(myArray) + " link: " + myArray);
-        changeArray(myArray);
-        System.out.println("Arrays.toString(myArray) = " + Arrays.toString(myArray) + " link: " + myArray);
-        changeArray(myArray);
-        System.out.println("Arrays.toString(myArray) = " + Arrays.toString(myArray) + " link: " + myArray);
-
-        fillIntArray(myArray);
+        System.out.println("x = " + x);
     }
 
-    // если в метод в качестве аргумента передать ссылочны тип данных, то изменяя эту переменную (аргумент метода)
-    // внутри метода мы увидим изменения и в том месте откуда метод вызван (в нашем случае - метод main)
-    public static void changeArray(int[] nums) {
-        for (int i = 0; i < nums.length; i++) {
-            nums[i] = nums[i] * 2;
+    public static int getMax(int a, int b) {
+
+        // методы, имеющие в своей сигнатуре тип возвращаемого значения ОБЯЗАНЫ
+        // в любом случае вернть результат указанного типа, то есть, если бы вместо "else" использовали "else if" (любой),
+        // то jvm не скопилировала бы данный код
+        if (a > b) {
+            return a;
+        } else {
+            return b;
         }
+
     }
 
-    // задача: создать массив, считав значения из консоли, при этом не зная исходны размер
-    public static void fillIntArray(int[] nums) {
+    public static int[] fillIntArray() {
         Scanner scanner  = new Scanner(System.in);
-        nums = new int[0];
+        int[] nums = new int[0];
 
         System.out.println("Вы хотите ввести все элементы в массив за раз через пробел или вводить элементы по одному?\n" +
                 "1 - все за раз\n" +
@@ -84,5 +78,6 @@ public class TeacherSandbox {
         }
 
         // System.out.println("Arrays.toString(nums) = " + Arrays.toString(nums));
+        return nums;
     }
 }

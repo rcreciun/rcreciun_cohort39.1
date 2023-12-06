@@ -8,6 +8,7 @@ public class Practice {
         // Вычисление факториала числа number
         int number = 5;
         int factorial = 1;
+        int[] numbers = {1, 2, 4};
 
         for (int i = 1; i <= number; i++) {
             factorial *= i;
@@ -49,5 +50,17 @@ public class Practice {
             number3 /= 10;
         }
         System.out.println("Сумма цифр числа " + number3 + " равна " + sum);
+
+        // Поиск максимального числа в массиве
+        int max = numbers[0];
+        for (int num : numbers) {
+            if (num > max) {
+                max = num;
+            }
+        }
+
+        // Проверка строки на палиндром
+        String reversed = new StringBuilder(str).reverse().toString();
+        boolean palindrome = str.equals(reversed);
     }
 }
