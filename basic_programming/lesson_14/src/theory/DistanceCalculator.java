@@ -34,7 +34,7 @@ public class DistanceCalculator {
     }
 
     public static double calculateDistanceWithReturn(double[] point1, double[] point2) {
-        if (point1.length != 3 || point2.length != 3) {
+        if ((point1 == null || point2 == null) || (point1.length != 3 || point2.length != 3)) {
             System.err.println("Каждая точка должна иметь три координаты.");
             // остановка работы метода. Так как метод имеет тип возвращаемого значения,
             // даже в случае некорректного ввода мы обязаны вернуть ответ указанног типа, в данном случае тип double
