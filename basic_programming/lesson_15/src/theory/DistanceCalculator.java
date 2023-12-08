@@ -1,7 +1,6 @@
 package theory;
 
 public class DistanceCalculator {
-
     public static void main(String[] args) {
         double[] point1 = {1.0, 2.0, 3.0};
         double[] point2 = {4.0, 5.0, 6.0};
@@ -14,8 +13,6 @@ public class DistanceCalculator {
         double distnceBetweenDots = calculateDistanceWithReturn(point3, point4);
 
         System.out.println("Расстояние между точками: " + distnceBetweenDots);
-
-
     }
 
     // Метод для вычисления расстояния между двумя точками в 3D пространстве

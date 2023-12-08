@@ -1,14 +1,16 @@
 {
-  "topic": "methods",
-  "date": "2023-12-06",
+  "topic": "unit tests",
+  "date": "2023-12-08",
   "plan": "plan.md",
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "src/theory/TheoryMethods.java",
-    "src/theory/TemperatureConverter.java",
     "src/theory/DistanceCalculator.java",
-    "src/theory/Practice.java"
+    "src/theory/PracticeJUnit.java",
+    "src/theory/TemperatureConverter.java",
+    "src/theory/TemperatureConverter.java",
+    "src/theory/TravelPlanner.java",
+    "test/TravelPlannerTest.java"
   ],
   "video": ""
 }
