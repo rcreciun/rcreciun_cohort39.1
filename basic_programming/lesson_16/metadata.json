@@ -1,0 +1,11 @@
+{
+  "topic": "OOP. Introduction",
+  "date": "2023-12-11",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/theory/HomePetCat.java"
+  ],
+  "video": ""
+}

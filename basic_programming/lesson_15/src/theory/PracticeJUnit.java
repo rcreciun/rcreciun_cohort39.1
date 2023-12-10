@@ -23,9 +23,10 @@ public class PracticeJUnit {
             throw new IllegalArgumentException("Массив не должен быть пустым");
         }
         double sum = 0;
-        for (int num : numbers) {
-            sum += num;
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
         }
+
         return sum / numbers.length;
     }
 
