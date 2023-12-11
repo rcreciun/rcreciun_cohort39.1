@@ -6,55 +6,54 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class HomeworkSolutionsTest {
-
-    // Тест для проверки существования треугольника
     @Test
-    public void testCanTriangleExist() {
-        assertTrue(HomeworkSolution14.canTriangleExist(3, 4, 5), "Треугольник с сторонами 3, 4, 5 должен существовать");
-        assertFalse(HomeworkSolution14.canTriangleExist(1, 2, 3), "Треугольник с сторонами 1, 2, 3 не должен существовать");
+    public void testFindMax() {
+        // Тестирует метод findMax, проверяя, правильно ли он определяет максимальное число из трех.
+        assertEquals(9, HomeworkSolution14.findMax(3, 9, 7),
+                "findMax не корректно находит максимум среди положительных чисел");
+        assertEquals(-1, HomeworkSolution14.findMax(-1, -3, -2),
+                "findMax не корректно находит максимум среди отрицательных чисел");
     }
 
-    // Тест для проверки объединения строк с изменением регистра
     @Test
-    public void testMergeStrings() {
-        assertEquals("aaBBB", HomeworkSolution14.mergeStrings("aaaa", "bbbbbb"), "Объединение 'aaaa' и 'bbbbbb' должно дать 'aabBBB'");
+    public void testFindLongestWord() {
+        // Тестирует метод findLongestWord, проверяя, правильно ли он находит самое длинное слово в строке.
+        assertEquals("longest", HomeworkSolution14.findLongestWord("This is the longest word"),
+                "findLongestWord не корректно находит самое длинное слово");
+        assertEquals("word", HomeworkSolution14.findLongestWord("word"),
+                "findLongestWord не корректно работает со строкой из одного слова");
     }
 
-    // Тест для проверки вычисления среднего арифметического
     @Test
-    public void testCalculateAverage() {
-        assertEquals(3.0, HomeworkSolution14.calculateAverage(new int[]{1, 2, 3, 4, 5}), 0.001, "Среднее арифметическое 1, 2, 3, 4, 5 должно быть 3.0");
-        assertEquals(20.0, HomeworkSolution14.calculateAverage(new int[]{10, 20, 30}), 0.001, "Среднее арифметическое 10, 20, 30 должно быть 20.0");
+    public void testCalculateBMI() {
+        // Тестирует метод calculateBMI, проверяя правильность расчета индекса массы тела.
+        assertEquals(22.85, HomeworkSolution14.calculateBMI(70, 1.75), 0.01,
+                "calculateBMI не корректно рассчитывает ИМТ");
+        assertEquals(18.36, HomeworkSolution14.calculateBMI(50, 1.65), 0.01,
+                "calculateBMI не корректно рассчитывает ИМТ при других параметрах");
+
     }
 
-    // Тест для проверки определения четности суммы чисел
     @Test
-    public void testIsSumEven() {
-        assertTrue(HomeworkSolution14.isSumEven(2, 4), "Сумма 2 и 4 должна быть четной");
-        assertFalse(HomeworkSolution14.isSumEven(3, 4), "Сумма 3 и 4 должна быть нечетной");
-    }
-
-    // Тест для проверки преобразования секунд в часы, минуты и секунды
-    @Test
-    public void testConvertSeconds() {
-        assertEquals("01:01:01", HomeworkSolution14.convertSeconds(3661), "3661 секунда должна быть преобразована в '01:01:01'");
-        assertEquals("23:59:59", HomeworkSolution14.convertSeconds(86399), "86399 секунд должны быть преобразованы в '23:59:59'");
+    public void testConvertSecondsToFormattedTime() {
+        // Тестирует метод convertSecondsToFormattedTime, проверяя правильность конвертации секунд в форматированное время.
+        assertEquals("01:40:40", HomeworkSolution14.convertSecondsToFormattedTime(6040),
+                "convertSecondsToFormattedTime не корректно конвертирует время");
+        assertEquals("00:00:00", HomeworkSolution14.convertSecondsToFormattedTime(0),
+                "convertSecondsToFormattedTime не корректно работает с нулевым значением");
     }
 
     @Test
     public void testCalculateArea() {
-        // В каждом из методов указана допустимая погрешность - delta 0.001
-        // Тестирование площади круга
-        assertEquals(Math.PI, HomeworkSolution14.calculateArea(1), 0.001, "Площадь круга с радиусом 1 должна быть Pi");
-
-        // Тестирование площади прямоугольника
-        assertEquals(12.0, HomeworkSolution14.calculateArea(3, 4), 0.001, "Площадь прямоугольника со сторонами 3 и 4 должна быть 12");
-
-        // Тестирование площади треугольника
-        assertEquals(6.0, HomeworkSolution14.calculateArea(3, 4, 5), 0.001, "Площадь треугольника со сторонами 3, 4, 5 должна быть 6");
-
-        // Тестирование некорректного ввода
-        assertEquals(-1, HomeworkSolution14.calculateArea(1, 2, 3, 4), 0.001, "Для некорректного количества размеров должно возвращаться -1");
+        // Тестирует метод calculateArea, проверяя правильность вычисления площади для разных фигур.
+        assertEquals(Math.PI * 4 * 4, HomeworkSolution14.calculateArea(new double[]{4}), 0.01,
+                "calculateArea не корректно вычисляет площадь круга");
+        assertEquals(20.0, HomeworkSolution14.calculateArea(new double[]{4, 5}), 0.01,
+                "calculateArea не корректно вычисляет площадь прямоугольника");
+        assertEquals(6.0, HomeworkSolution14.calculateArea(new double[]{3, 4, 5}), 0.01,
+                "calculateArea не корректно вычисляет площадь треугольника");
+        assertEquals(-1, HomeworkSolution14.calculateArea(new double[]{}), 0.01,
+                "calculateArea не корректно обрабатывает некорректные данные");
     }
 }
 
