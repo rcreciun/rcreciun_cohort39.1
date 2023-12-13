@@ -4,12 +4,14 @@ package teachers_code;
 import mail_service.teachers_code.MailService;
 
 public class TeacherSandbox {
-    public static void main(String[] args) {
-        MailService ilyasMail = new MailService("ilyas@mail.com",
+    public static void main(String[] args)  {
+        MailService ilyasMail = MailService.createAccount("ilyas@mail.com",
                 "1233");
 
-        MailService anotherMail = new MailService("some_login@mail.com", "134234");
-        MailService newMailAccount = new MailService("some_login@mail.com", "134234");
+        MailService anotherMail = MailService.createAccount("some_login@mail.com", "134234");
+
+
+        MailService newMailAccount = MailService.createAccount("some_login@mail.com", "134234");
 
         // ..
 
@@ -19,7 +21,7 @@ public class TeacherSandbox {
         System.out.println("anotherMail.getLogin() = " + anotherMail.getLogin());
         System.out.println("anotherMail.getPassword() = " + anotherMail.getPassword());
 
-        System.out.println("newMailAccount.getLogin() = " + newMailAccount.getLogin());
+        System.out.println("newMailAccount= " + newMailAccount);
 
         ilyasMail.setPassword("4567", "1233");
 

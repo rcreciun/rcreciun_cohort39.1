@@ -1,14 +1,38 @@
 package mail_service.teachers_code;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class MailService {
     private String login;
     private String password;
 
-    private String[] logins;
+    private static String[] logins = new String[0];
 
-    public MailService(String login, String password) {
+    public static MailService createAccount(String login, String password) {
+        boolean isLoginExist = false;
+
+        for (int i = 0; i < logins.length; i++) {
+            if (login.equals(logins[i])) {
+                isLoginExist = true;
+                break;
+            }
+        }
+
+        if (isLoginExist) {
+            System.out.println("Данный логин " + login + " уже существует в системе, " +
+                    "пожалуйста попробуйте зарегестрироваться с новым значением");
+            return null;
+        } else {
+            logins = Arrays.copyOf(logins, logins.length + 1);
+            logins[logins.length - 1] = login;
+            MailService mail = new MailService(login, password);
+            System.out.println("Аккуант с логином " + login + " успешно создан");
+            return mail;
+        }
+    }
+
+    private MailService(String login, String password) {
         this.login = login;
         this.password = password;
     }
