@@ -6,6 +6,8 @@ public class MailService {
     private String login;
     private String password;
 
+    private String[] logins;
+
     public MailService(String login, String password) {
         this.login = login;
         this.password = password;
