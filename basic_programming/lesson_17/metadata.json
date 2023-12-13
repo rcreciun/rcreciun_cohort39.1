@@ -1,0 +1,11 @@
+{
+  "topic": "OOP. Incapsulation",
+  "date": "2023-12-13",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/theory/HomePetCat.java"
+  ],
+  "video": ""
+}
