@@ -1,0 +1,11 @@
+{
+  "topic": "OOP. Inheritance",
+  "date": "2023-12-15",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/mail_service/teachers_code/MailService.java.java"
+  ],
+  "video": ""
+}
