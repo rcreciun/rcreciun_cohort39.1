@@ -1,4 +1,4 @@
-package consultation23_12_05.teachers_code;
+package consultation2023_12_05.teachers_code;
 
 import java.util.Random;
 
