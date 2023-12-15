@@ -7,7 +7,7 @@ package theory.inheritance;
  */
 public class MobileDevicesUsage {
     public static void main(String[] args) {
-        useMobile2g();
+        useMobile3g();
     }
 
     // использование базового класса Mobile1g
@@ -30,5 +30,17 @@ public class MobileDevicesUsage {
 
         mobile.sendSMS("hello there!");
         mobile.sendSMS("hello there! tooooooooo loooong messssage");
+    }
+
+    // ключевое отличе в том, что мы исправили метод sendSMS, переопредлив этот метод в классе Mobile3g
+    static void useMobile3g() {
+        Mobile3g mobile = new Mobile3g(333);
+
+        mobile.call();
+
+        mobile.sendSMS("hello there!");
+        mobile.sendSMS("hello there! tooooooooo loooong messssage");
+
+        mobile.internetAccess();
     }
 }
