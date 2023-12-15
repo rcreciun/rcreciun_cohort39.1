@@ -13,8 +13,25 @@ public class MedicineCart {
     // беременный ли пациент или нет
     private boolean isPregnant;
 
+    // конструктор, который позволяет указать при регистрации только имя
+
     public MedicineCart(String name) {
         this.name = name;
+    }
+
+    // конструктор, который позволяет указать при регистрации только имя и возраст
+    public MedicineCart(String name, int age) {
+        this.age = age;
+        this.name = name;
+    }
+
+    // конструктор, который позволяет заполнить сразу все данные
+    public MedicineCart(int age, double weight, String name, String gender, boolean isPregnant) {
+        this.age = age;
+        this.weight = weight;
+        this.name = name;
+        this.gender = gender;
+        this.isPregnant = isPregnant;
     }
 
     // геттеры и сеттеры реализованы так,
