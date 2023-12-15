@@ -15,4 +15,11 @@ public class Mobile1g {
     public void call() {
         System.out.printf("I call from 1g mobile phone with number %d\n" , phoneNumber);
     }
+
+    // данный геттер добавлен только после создания дочернего класса Mobile2g,
+    // тк поле phoneNumber - приватное и не доступно даже наследникам класса, но при этом используется в
+    // методе sendSMS
+    public long getPhoneNumber() {
+        return phoneNumber;
+    }
 }
