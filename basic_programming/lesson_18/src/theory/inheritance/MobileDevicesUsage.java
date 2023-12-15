@@ -1,5 +1,7 @@
 package theory.inheritance;
 
+import java.util.List;
+
 /**
  * класс для создания экземпляров классов Mobile[N]g
  * <p>
@@ -10,6 +12,9 @@ public class MobileDevicesUsage {
         useMobile1g();
         useMobile2g();
         useMobile3g();
+
+
+        List
     }
 
     // использование базового класса Mobile1g
