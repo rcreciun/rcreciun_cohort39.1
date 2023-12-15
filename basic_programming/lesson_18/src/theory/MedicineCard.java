@@ -1,7 +1,7 @@
 package theory;
 
 // медицинское приложение, которое собирает анамнез пациента
-public class MedicineCart {
+public class MedicineCard {
     // возраст
     private int age;
     // вес, в кг
@@ -15,7 +15,7 @@ public class MedicineCart {
 
     // конструктор, который позволяет указать при регистрации только имя
 
-    public MedicineCart(String name) {
+    public MedicineCard(String name) {
         this.name = name;
 
         // с учетом того, что при регистрации мы узнаем лишь одно значение - name,
@@ -29,7 +29,7 @@ public class MedicineCart {
     }
 
     // конструктор, который позволяет указать при регистрации только имя и возраст
-    public MedicineCart(String name, int age) {
+    public MedicineCard(String name, int age) {
         this.age = age;
         this.name = name;
     }
@@ -43,7 +43,7 @@ public class MedicineCart {
 
 
     // конструктор, который позволяет заполнить сразу все данные
-    public MedicineCart(int age, double weight, String name, String gender, boolean isPregnant) {
+    public MedicineCard(int age, double weight, String name, String gender, boolean isPregnant) {
         this.age = age;
         this.weight = weight;
         this.name = name;
