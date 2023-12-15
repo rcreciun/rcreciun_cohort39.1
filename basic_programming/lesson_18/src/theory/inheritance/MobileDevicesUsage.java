@@ -12,9 +12,6 @@ public class MobileDevicesUsage {
         useMobile1g();
         useMobile2g();
         useMobile3g();
-
-
-        List
     }
 
     // использование базового класса Mobile1g
