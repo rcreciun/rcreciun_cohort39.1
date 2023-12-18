@@ -10,12 +10,23 @@ import java.util.List;
 public class MobileDevicesUsage {
     public static void main(String[] args) {
         Mobile1g mobileOne = new Mobile1g(1_000);
-        Mobile1g mobileTwo = new Mobile1g(1_000);
+        Mobile1g mobileTwo = new Mobile1g(1234534);
+
+        createMobileDevice(mobileOne, "white", "siemens s65", 2006);
+        createMobileDevice(mobileTwo, "black", "siemens s65", 2006);
 
         tryToPrintInfoAboutMobile1g(mobileOne);
         tryToPrintInfoAboutMobile1g(mobileTwo);
 
+        mobileOne.equals(mobileTwo);
+
         tryToCompareTwoMobile1g(mobileOne, mobileTwo);
+    }
+
+    static void createMobileDevice (Mobile1g mobile1g, String color, String modelName, int year) {
+        mobile1g.setColor(color);
+        mobile1g.setModelName(modelName);
+        mobile1g.setYearOfProduce(year);
     }
 
     // данный метод создан для того, чтобы попытаться распечатать строковое представление
@@ -29,6 +40,12 @@ public class MobileDevicesUsage {
         System.out.println(mobile1g.toString());
     }
 
+
+    // по умолчанию, метод object1.equals(object2) сравнивает лишь ссылка этих двух обхектов,
+    // возвращая true, лишь в том случае, когда ссылки одинаковы, то есть когда две эти переменные
+    // ссылаются на одну и ту же ячейку памяти. (то есть это разные объекты, равносильно object1 == object2)
+    // чтобы провести проверку по каким-то параметрам, которые для нас важны, то нас следует
+    // переопределить данный метод equals самостоятельно
     static void tryToCompareTwoMobile1g(Mobile1g mobileOne, Mobile1g mobileTwo){
         boolean areEquals = mobileOne.equals(mobileTwo);
 
