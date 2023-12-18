@@ -23,8 +23,22 @@ public class Mobile1g {
         return phoneNumber;
     }
 
+
+    // метод toString - является методом класса Object, по умолчанию он лишь возвращает в тестовом виде информацию о
+    // том, где расположен данный класс и хешкод (уникальный численный идентификатор) конкретного объекта,
+    // но мы самостоятельно можем переопределить его так, как нам будет удобно:
     @Override
     public String toString() {
         return "Мобильный телефон первого поколения с номером телефона " + phoneNumber;
     }
+
+    //
+//    @Override
+//    public boolean equals(Object o) {
+//        //
+//        if (this == o) return true;
+//        if (!(o instanceof Mobile1g mobile1g)) return false;
+//
+//        return getPhoneNumber() == mobile1g.getPhoneNumber();
+//    }
 }

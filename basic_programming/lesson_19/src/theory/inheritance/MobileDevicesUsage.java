@@ -10,10 +10,12 @@ import java.util.List;
 public class MobileDevicesUsage {
     public static void main(String[] args) {
         Mobile1g mobileOne = new Mobile1g(1_000);
-        Mobile1g mobileTwo = new Mobile1g(1_010);
+        Mobile1g mobileTwo = new Mobile1g(1_000);
 
         tryToPrintInfoAboutMobile1g(mobileOne);
         tryToPrintInfoAboutMobile1g(mobileTwo);
+
+        tryToCompareTwoMobile1g(mobileOne, mobileTwo);
     }
 
     // данный метод создан для того, чтобы попытаться распечатать строковое представление
@@ -27,7 +29,11 @@ public class MobileDevicesUsage {
         System.out.println(mobile1g.toString());
     }
 
+    static void tryToCompareTwoMobile1g(Mobile1g mobileOne, Mobile1g mobileTwo){
+        boolean areEquals = mobileOne.equals(mobileTwo);
 
+        System.out.println("Are mobileOne equals to mobileTwo: " + areEquals);
+    }
 
     // использование базового класса Mobile1g
     static void useMobile1g() {
