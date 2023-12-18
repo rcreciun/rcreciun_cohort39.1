@@ -20,5 +20,6 @@ public class SmartPhoneUsage {
         phone.takePhoto();
         phone.sendMessage();
         phone.internetConnection();
+        System.out.println("=======================");
     }
 }
