@@ -46,4 +46,9 @@ public class Mobile2g extends Mobile1g{
             System.out.printf("Message <%s> has been sent from 2g device with number %d\n", message, super.getPhoneNumber());
         }
     }
+
+    @Override
+    public void call() {
+        System.out.printf("I call from 2g mobile phone with number %d\n" , super.getPhoneNumber());
+    }
 }

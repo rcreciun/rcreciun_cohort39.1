@@ -1,9 +1,10 @@
 package theory.polymorphism;
 
 public class DeviceManager {
-
     public void connectDeviceToWiFi(SmartDevice device) {
+        // общая логика подключения у любого смарт девайса
         device.connectToWiFi();
+
         if (device instanceof SmartPhone) {
             SmartPhone phone = (SmartPhone) device;
             phone.takePhoto();

@@ -9,6 +9,27 @@ import java.util.List;
  */
 public class MobileDevicesUsage {
     public static void main(String[] args) {
+        Mobile2g mobile2g = new Mobile2g(2345);
+
+        // пример нисходящего присвоения, когда в класс-наследник сохряняется значение родителя.
+        // в этом случае мы обязаны явно привести тип данных, тк за часту. это приводит к ошибкам
+        // в виду того, что в классе наследнике может быть больше фугкционала, которого нет в
+        // классе-родителе
+        // Пример:
+        // Mobile3g mobile3g = (Mobile3g) mobile2g;
+        // mobile3g.internetAccess();
+
+        // но мы вполне легально можем сделать таким образом, что присвоим в переменную
+        // родительского класса значение из дочернего класса. Это позволит использовать только общие,
+        // унаследованные методы, но с новой реализацией, то есть легально:
+        Mobile1g mobile1gNew = mobile2g;
+        mobile1gNew.call();
+
+        // не леально, тк в Mobile1g такого метода нет
+        // mobile1gNew.sendSMS("hello");
+    }
+
+    public static void startEquals() {
         Mobile1g mobileOne = new Mobile1g(1_000);
         Mobile1g mobileTwo = new Mobile1g(1234534);
         Mobile1g mobileThree = new Mobile1g(8765432);
