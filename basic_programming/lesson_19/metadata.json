@@ -1,0 +1,18 @@
+{
+  "topic": "OOP. Polymorphism",
+  "date": "2023-12-18",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/mail_service/teachers_code/MailService.java.java",
+    "src/theory/MedicineCard.java",
+    "src/theory/MedicineCardUsage.java",
+    "src/theory/PolymorphicGuiApp.java",
+    "src/theory/polymorphism/SmartDevice.java",
+    "src/theory/polymorphism/SmartPhone.java",
+    "src/theory/polymorphism/SmartWatch.java",
+    "src/theory/polymorphism/DeviceManager.java"
+  ],
+  "video": ""
+}
