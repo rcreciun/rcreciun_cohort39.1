@@ -11,16 +11,19 @@ public class MobileDevicesUsage {
     public static void main(String[] args) {
         Mobile1g mobileOne = new Mobile1g(1_000);
         Mobile1g mobileTwo = new Mobile1g(1234534);
+        Mobile1g mobileThree = new Mobile1g(8765432);
 
         createMobileDevice(mobileOne, "white", "siemens s65", 2006);
         createMobileDevice(mobileTwo, "black", "siemens s65", 2006);
+        createMobileDevice(mobileThree, "black", "siemens s65", 2006);
 
         tryToPrintInfoAboutMobile1g(mobileOne);
         tryToPrintInfoAboutMobile1g(mobileTwo);
-
-        mobileOne.equals(mobileTwo);
+        tryToPrintInfoAboutMobile1g(mobileThree);
 
         tryToCompareTwoMobile1g(mobileOne, mobileTwo);
+        tryToCompareTwoMobile1g(mobileOne, mobileThree);
+        tryToCompareTwoMobile1g(mobileTwo, mobileThree);
     }
 
     static void createMobileDevice (Mobile1g mobile1g, String color, String modelName, int year) {
@@ -49,7 +52,7 @@ public class MobileDevicesUsage {
     static void tryToCompareTwoMobile1g(Mobile1g mobileOne, Mobile1g mobileTwo){
         boolean areEquals = mobileOne.equals(mobileTwo);
 
-        System.out.println("Are mobileOne equals to mobileTwo: " + areEquals);
+        System.out.println("Two mobile1g devices are equals: " + areEquals);
     }
 
     // использование базового класса Mobile1g
