@@ -9,10 +9,25 @@ import java.util.List;
  */
 public class MobileDevicesUsage {
     public static void main(String[] args) {
-        useMobile1g();
-        useMobile2g();
-        useMobile3g();
+        Mobile1g mobileOne = new Mobile1g(1_000);
+        Mobile1g mobileTwo = new Mobile1g(1_010);
+
+        tryToPrintInfoAboutMobile1g(mobileOne);
+        tryToPrintInfoAboutMobile1g(mobileTwo);
     }
+
+    // данный метод создан для того, чтобы попытаться распечатать строковое представление
+    // экземпляра класса Mobile1g.
+    // если не переопределить метод toString(), то строковое представление объекта будет
+    // представлять собой ссылку на путь до файла + хешкод в шестнадцатиричной системе счисления:
+    // (пример: theory.inheritance.Mobile1g@2a84aee7)
+    //
+
+    static void tryToPrintInfoAboutMobile1g(Mobile1g mobile1g){
+        System.out.println(mobile1g.toString());
+    }
+
+
 
     // использование базового класса Mobile1g
     static void useMobile1g() {

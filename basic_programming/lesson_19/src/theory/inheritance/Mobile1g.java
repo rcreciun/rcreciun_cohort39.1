@@ -22,4 +22,9 @@ public class Mobile1g {
     public long getPhoneNumber() {
         return phoneNumber;
     }
+
+    @Override
+    public String toString() {
+        return "Мобильный телефон первого поколения с номером телефона " + phoneNumber;
+    }
 }
