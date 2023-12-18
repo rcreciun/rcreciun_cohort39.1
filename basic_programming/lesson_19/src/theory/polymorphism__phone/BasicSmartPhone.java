@@ -5,16 +5,14 @@ public class BasicSmartPhone {
 
     private double displayDiagonalInch;
 
-    private String[] cameraType;
 
     private int storage;
 
     private String generation;
 
-    public BasicSmartPhone(int batteryCapacity, double displayDiagonalInch, String[] cameraType, int storage, String generation) {
+    public BasicSmartPhone(int batteryCapacity, double displayDiagonalInch,  int storage, String generation) {
         this.batteryCapacity = batteryCapacity;
         this.displayDiagonalInch = displayDiagonalInch;
-        this.cameraType = cameraType;
         this.storage = storage;
         this.generation = generation;
     }
@@ -55,13 +53,7 @@ public class BasicSmartPhone {
         this.displayDiagonalInch = displayDiagonalInch;
     }
 
-    public String[] getCameraType() {
-        return cameraType;
-    }
 
-    public void setCameraType(String[] cameraType) {
-        this.cameraType = cameraType;
-    }
 
     public int getStorage() {
         return storage;
