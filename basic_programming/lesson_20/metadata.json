@@ -1,0 +1,17 @@
+{
+  "topic": "OOP. Polymorphism",
+  "date": "2023-12-18",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/theory/interfaces/Camera.java",
+    "src/theory/interfaces/MusicPlayer.java",
+    "src/theory/interfaces/Phone.java",
+    "src/theory/interfaces/Smartphone.java",
+    "src/theory/interfaces/SmartphoneUsage.java",
+
+    "src/theory/polymorphism/DeviceManager.java"
+  ],
+  "video": ""
+}
