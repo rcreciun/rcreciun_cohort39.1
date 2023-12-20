@@ -5,8 +5,6 @@ import java.time.ZoneId;
 public class Usage {
     public static void main(String[] args) {
         clockUsage();
-
-
     }
 
 
@@ -15,7 +13,7 @@ public class Usage {
         clock.showTime();
 
         // Меняем временную зону
-        clock.setTimeZone(ZoneId.of("Asia/Tokyo"));
+        clock.setTimeZone(ZoneId.of("America/Chicago"));
         clock.showTime();
     }
 
