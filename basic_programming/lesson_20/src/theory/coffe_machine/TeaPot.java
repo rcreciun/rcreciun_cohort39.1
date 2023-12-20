@@ -10,6 +10,9 @@ public class TeaPot {
     // объем чайника
     private double volume;
 
+    // производитель
+    private String manufacturer;
+
     private static final int ROOM_TEMPERATURE = 20;
     private static final int MAX_TEMPERATURE = 130;
 
@@ -17,8 +20,9 @@ public class TeaPot {
     //тк температура может изменяться в ходе работы чайника,
     // мы не будем требовать указать ее в конструкторе,
     // но для корректного функционирования обязательно знать объем чайника
-    public TeaPot(double volume) {
+    public TeaPot(double volume, String manufacturer) {
         this.volume = volume;
+        this.manufacturer = manufacturer;
 
         // по умолчанию задали комнатную температуру:
         this.temperature = ROOM_TEMPERATURE;
@@ -49,16 +53,56 @@ public class TeaPot {
         return this.temperature;
     }
 
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
     public void showInfo() {
-        System.out.printf("Чайник объемом %.2f в данный момент поддерживает температуру %d\n",
-                this.volume, this.temperature);
+        System.out.printf("Чайник объемом %.2f, произведенный %s в данный момент поддерживает температуру %d\n",
+                this.volume, this.manufacturer, this.temperature);
     }
 
     @Override
     public String toString() {
         String answer = "Чайник объемом " + this.volume +
-                " в данный момент поддерживает температуру " + this.temperature;
+                ", произвденный " + this.manufacturer + " в данный момент поддерживает температуру " + this.temperature;
 
         return answer;
+    }
+
+
+    //samePot.equals(bigPot)
+    // this - это "samePot" и все его поля
+    // obj - это "bigPot".
+    // Но так как мы наследуемя от класса Object, мы не можем в аргументах сразу указать,
+    // что к нам приходит искючительно тип данных TeaPot, тк данный метод определен в оригинальном классе по-другому
+    // и мы не можем изменять сигнатуру метода: "boolean equals(Object obj)" (не можем изменить тип возвращаемого
+    // значения) и аргументы.
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+
+        if (obj == null || !(obj instanceof TeaPot)) {
+            return false;
+        }
+
+        TeaPot pot = (TeaPot) obj;
+
+        if (this.volume == pot.volume) {
+            if (this.manufacturer.equals(pot.manufacturer)) {
+                System.out.println("чайники одинаковые по совокупности признаков - объем и производитель");
+                return true;
+            } else {
+                System.out.println("У чайников разный производитель");
+                return false;
+            }
+        } else {
+            System.out.println("У чайников разный объем");
+            return false;
+        }
+
+        // return (this.volume == pot.volume) && (this.manufacturer.equals(pot.manufacturer));
     }
 }
