@@ -4,7 +4,7 @@ import java.time.LocalTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
-public class Clock {
+public class Clock implements ClockInterface{
 
     // поле timeZone хранит информацию о временной зоне.
     private ZoneId timeZone;
@@ -13,6 +13,7 @@ public class Clock {
         this.timeZone = timeZone;
     }
 
+    @Override
     public void showTime() {
         LocalTime time = LocalTime.now(timeZone);
         System.out.println("Текущее время: " + time.format(DateTimeFormatter.ofPattern("HH:mm:ss")));

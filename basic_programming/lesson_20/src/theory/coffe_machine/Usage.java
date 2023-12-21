@@ -4,7 +4,7 @@ import java.time.ZoneId;
 
 public class Usage {
     public static void main(String[] args) {
-        clockUsage();
+        coffeeMachineUsage();
     }
 
 
@@ -15,6 +15,12 @@ public class Usage {
         // Меняем временную зону
         clock.setTimeZone(ZoneId.of("America/Chicago"));
         clock.showTime();
+
+        ClockInterface justClock = new Clock(ZoneId.of("Europe/Paris"));
+        ClockInterface clockOnCoffeeMachine = new CoffeeMakerMachine("Milele", "Asia/Tokyo");
+
+
+
     }
 
     static void potUsage () {
@@ -36,5 +42,22 @@ public class Usage {
         System.out.println("samePot.equals(bigPot) = " + samePot.equals(bigPot));
         System.out.println("samePot.equals(samePot) = " + samePot.equals(samePot));
         System.out.println("bigPot.equals(boschPot) = " + bigPot.equals(boschPot));
+    }
+
+    static void coffeeMachineUsage() {
+        CoffeeMakerMachine coffeeMakerMachine = new CoffeeMakerMachine("Bosch", "Europe/Berlin");
+
+        coffeeMakerMachine.fillCoffeeMachineResources();
+
+        coffeeMakerMachine.cookEspressoCoffee();
+        coffeeMakerMachine.cookEspressoCoffee();
+        coffeeMakerMachine.cookEspressoCoffee();
+        coffeeMakerMachine.cookEspressoCoffee();
+        coffeeMakerMachine.cookEspressoCoffee();
+        coffeeMakerMachine.cookEspressoCoffee();
+        coffeeMakerMachine.cookEspressoCoffee();
+        coffeeMakerMachine.cookEspressoCoffee();
+
+        coffeeMakerMachine.showTime();
     }
 }

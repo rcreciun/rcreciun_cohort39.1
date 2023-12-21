@@ -80,6 +80,7 @@ public class TeaPot {
     // значения) и аргументы.
     @Override
     public boolean equals(Object obj) {
+
         if (this == obj) {
             return true;
         }
@@ -104,5 +105,6 @@ public class TeaPot {
         }
 
         // return (this.volume == pot.volume) && (this.manufacturer.equals(pot.manufacturer));
+        // return (this.volume == ((TeaPot) obj).volume) && (this.manufacturer.equals(((TeaPot) obj).manufacturer));
     }
 }

@@ -1,6 +1,10 @@
 package theory.coffe_machine;
 
-public class CoffeeMakerMachine {
+import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+
+public class CoffeeMakerMachine implements ClockInterface  {
     // производитель
     private String manufacturer;
 
@@ -8,13 +12,18 @@ public class CoffeeMakerMachine {
     private int coffeeBeansPercent;
     private int waterLevelPercent;
     private int milkLevelPercent;
+    private ZoneId timeZone;
 
-    public CoffeeMakerMachine(String manufacturer) {
+    public CoffeeMakerMachine(String manufacturer, String timeZoneValue) {
         this.manufacturer = manufacturer;
+        this.timeZone = ZoneId.of(timeZoneValue);
+
         // мы обязаны проинициализировать не статичные поля, следовательно:
         this.coffeeBeansPercent = 0;
         this.waterLevelPercent = 0;
         this.milkLevelPercent = 0;
+
+
     }
 
     // для упрощения логики, заполнение всех необходимых ресурсов до максимума производится в методе ниже:
@@ -79,5 +88,10 @@ public class CoffeeMakerMachine {
         this.waterLevelPercent -= 7;
 
         System.out.println("ваш эспрессо готов");
+    }
+
+    @Override
+    public void showTime() {
+        System.out.println("Текущее время: " + LocalTime.now(timeZone).format(DateTimeFormatter.ofPattern("HH:mm:ss")));
     }
 }
